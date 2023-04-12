@@ -6,7 +6,7 @@ import training_data
 label = []
 def predict(test_img):
     img = cv2.imread(test_img).copy()
-    print("\n\n\n")
+    print("\n")
     print("Face Prediction Running -\\-")
     face, rect, length = face_detect.face_detect(test_img)
     print(len(face), "faces detected.")
